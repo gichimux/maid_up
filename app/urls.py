@@ -6,6 +6,7 @@ from django.conf.urls.static import static
 
 urlpatterns=[
     url(r'^$',views.landing,name='landing'),
+    url(r'^client/',views.client_index,name='client_index'),
 ]
 
 if settings.DEBUG:
