@@ -1,0 +1,68 @@
+{% extends 'client/base.html' %}
+{% load static %}
+{% block content%}
+  <!-- Begin Page Content -->
+        <div class="container-fluid">
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <a href="#" class="btn btn-warning btn-icon-split">
+                    <span class="icon text-white-90">
+                      <i class="fas fa-coins"></i>
+                    </span>
+                    <span class="text">23</span>
+                  </a>  
+                  
+                   <a href="#" class="btn btn-primary btn-icon-split">
+                    <span class="icon text-white-90">
+                      <i class="fa fa-briefcase"></i>
+                    </span>
+                    <span class="text">Upgrade</span>
+                  </a>
+                        
+                  </div>
+
+            <!-- Content Row -->
+            <div class="row justify-content-center" >
+                <div class="col-lg-4 col-md-4 " >
+                    <div class="card mb-4" >
+                    <div class="card-header">
+                    <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-globe-africa"></i> public profile</h6>
+                    </div>
+                    <div class="card-body">
+                    <div class="avatar-holder">
+                        <img class="rounded-circle" src="{% static 'img/img_avatar.png'%}">
+                    </div><br>
+                    <div class="info-holder">
+                    <h6 class="text-center"> John Doe</h6>
+                    <h6 class="text-center"><i class="fas fa-money-bill-wave  fa-1x text-gray-500"></i> Spent: 34,000 Ksh 
+                    </div>
+                    </div>
+                    </div>
+                </div>
+
+           
+
+           
+                <div class="col-lg-4 col-md-4 " >
+                 <div class="card mb-4">
+                    <div class="card-header ">
+                  <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-user-shield"></i> Personal information</h6>
+                 </div>
+
+                    <div class="card-body">
+                    <div class="info-form">
+                    <p><strong>First Name:</strong> John</p>
+                    <p><strong>Surname:</strong> Doe</p>
+                    <p> <i class="fas fa-at  fa-1x text-gray-500"></i> <strong>Primary email:</strong> johndoe@gmail.com</p>
+                    <p> <i class="fas fa-phone-square  fa-1x text-gray-500"></i> <strong>Primary Contact:</strong> +254733456787</p>
+                    <p> <i class="fas fa-industry  fa-1x text-gray-500"></i> <strong>Industry:</strong> General</p>            
+                    <p><strong><i class="fas fa-money-bill-wave  fa-1x text-gray-500"></i> Spending:</strong> <select><option value="public"> Public</option><option value="private"> Private</option></select></p>
+                    </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+{% endblock %}

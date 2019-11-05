@@ -24,7 +24,7 @@ def view_client_gig(request):
 
 
 def client_profile(request):
-    return render(request, 'app/landing.html', {})
+    return render(request, 'client/profile/profile.html', {})
 
 # ====================================================
 # freelancer views

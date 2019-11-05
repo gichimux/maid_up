@@ -10,7 +10,7 @@ class Verification(models.Model):
      personel = models.IntegerField(default=0)
      
 
-class Worker(models.Model):
+class Freelancer(models.Model):
      fname = models.CharField(max_length=50)
      lname = models.CharField(max_length=50)
      profile_pic = models.ImageField(upload_to='profilePics/', height_field=None, width_field=None, max_length=None,default='DEFAULT_VALUE')

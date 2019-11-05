@@ -18,6 +18,7 @@
 
   <!-- Custom styles for this template-->
   <link href="{% static 'css/client/client_main.css'%}" rel="stylesheet">
+  <link href="{% static 'css/client/extra.css'%}" rel="stylesheet">
 <style>
 .checked {
   color: orange;
@@ -115,7 +116,7 @@
         My account
       </div>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#"  aria-expanded="true" aria-controls="collapsePages">
+        <a class="nav-link collapsed" href="{% url 'client_profile'%}"  aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-user-edit"></i>
           <span>Profile</span>
         </a>
@@ -124,7 +125,7 @@
       
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-caret-square-up  fa-1x text-gray-200"></i>
+          <i class="fas fa-briefcase  fa-1x text-gray-200"></i>
           <span> Upgrade account</span>
         </a>
         
